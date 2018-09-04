@@ -12,8 +12,15 @@ arraysAnswers = {
       //loop through arr 
       //set condition to return 0 base index (if)
 
-
-
+      for (var i=0; i<arr.length; i++){
+        var singles = arr.length[i]
+        if(item === singles[0]){
+          return singles[i]
+        }
+        else if( item !== single[0]){
+          return '-1'
+        }
+      }
   },
 
   /**
@@ -40,6 +47,20 @@ arraysAnswers = {
    */
   remove: function remove(arr, item) {
 
+    var newArr = []
+    var excludeArr = []
+
+    for(var i=0; i<arr.length; i++){
+
+      var ogArr = arr.length[i]
+      if( ogArr === item ){
+        excludeArr.push(item)
+      }
+      else{
+        newArr.push(ogArr)
+      }
+    }
+    return newArr
 
   },
 
@@ -52,11 +73,7 @@ arraysAnswers = {
    */
   append: function append(arr, item) {
 
-    for(var i=0; i<arr.length; i++){
-      var newArr = arr.length[i] 
-        
-    }
-    return append
+
   },
 
   /**
