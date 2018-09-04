@@ -8,6 +8,12 @@ arraysAnswers = {
    */
   indexOf: function indexOf(arr, item) {
     // Implement a function, that returns the 0 based index of an element in an array.
+
+      //loop through arr 
+      //set condition to return 0 base index (if)
+
+
+
   },
 
   /**
@@ -17,7 +23,12 @@ arraysAnswers = {
    * @returns {Number} The numerical sum of all items in arr.
    */
   sum: function sum(arr) {
+    var total = 0
 
+    for(var i=0; i<arr.length; i++){
+      total = total + arr[i]
+    }
+    return total
   },
 
   /**
@@ -28,6 +39,7 @@ arraysAnswers = {
    * @returns {Number[]} A new array containing all numbers from arr except item.
    */
   remove: function remove(arr, item) {
+
 
   },
 
@@ -40,6 +52,11 @@ arraysAnswers = {
    */
   append: function append(arr, item) {
 
+    for(var i=0; i<arr.length; i++){
+      var newArr = arr.length[i] 
+        
+    }
+    return append
   },
 
   /**
@@ -106,6 +123,18 @@ arraysAnswers = {
    */
   count: function count(arr, item) {
 
+      //setup counter 
+      //loop through arr
+      //set up condition to count item in arr (if)
+      //count number of time item is in arr 
+
+    var countNum = 0 
+    for (var i=0; i<arr.length; i++){
+      if(arr[i] === item){
+        countNum = countNum + 1
+      } 
+    }
+    return countNum
   },
 
   /**
@@ -116,6 +145,19 @@ arraysAnswers = {
    */
   duplicates: function duplicates(arr) {
 
+      //setup counter 
+      //loop through arr 
+      //set up condition for counting number that appear more than once 
+      //set up arr to hold repeating number 
+      //
+
+      var counter = 0 
+      for(var i=0; i<arr.length; i++){
+        if(arr[i] === arr[i]){
+          counter = counter +1
+        }
+      }
+      return counter
   },
 
   /**
@@ -126,6 +168,12 @@ arraysAnswers = {
    */
   square: function square(arr) {
 
+    var toSquare = []
+    for(var i=0; i<arr.length; i++){
+      var double = arr[i]*2
+      toSquare.push(double)
+    }
+    return toSquare
   },
 
   /**
