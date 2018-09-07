@@ -11,6 +11,8 @@ functionsAnswers = {
    */
   argsAsArray: function argsAsArray(fn, arr) {
 
+
+
   },
 
   /**
@@ -28,5 +30,12 @@ functionsAnswers = {
    */
   functionFunction: function functionFunction(str) {
 
+    var insideFunc = function(argInput){
+      
+
+    }
+    
+    return str + ',' //+ arg from insideFunc
+    
   },
 };

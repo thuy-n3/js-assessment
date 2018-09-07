@@ -73,6 +73,10 @@ arraysAnswers = {
    */
   append: function append(arr, item) {
 
+    var newArr = []
+    var addTo = arr + ',' + item 
+    newArr.push (addTo)
+    return newArr
 
   },
 
@@ -83,6 +87,14 @@ arraysAnswers = {
    * @returns {Number[]} The array arr, with the last element removed..
    */
   truncate: function truncate(arr) {
+
+    //pop off element to remove
+    //pop off the the last element 
+    //push remaining arr to new 
+
+    var shorty = []
+    var last = shorty.pop(arr[0])
+    return shorty
 
   },
 
@@ -95,6 +107,8 @@ arraysAnswers = {
    */
   prepend: function prepend(arr, item) {
 
+
+  
   },
 
 
@@ -106,6 +120,7 @@ arraysAnswers = {
    */
   curtail: function curtail(arr) {
 
+
   },
 
   /**
@@ -116,6 +131,9 @@ arraysAnswers = {
    * @returns {Number[]} A new array, with elements from arr1 and arr2 in that order.
    */
   concat: function concat(arr1, arr2) {
+
+    var together = arr1 + ',' + arr2
+    return together 
 
   },
 
@@ -201,6 +219,23 @@ arraysAnswers = {
    * @returns {Number[]} A new array of numbers which represent the indices of target in arr.
    */
   findAllOccurrences: function findAllOccurrences(arr, target) {
+
+    //loop through arr 
+    //set up condition to find all occurences of target (if)
+    //push the matched occurences to new arr
+    //
+
+    var allOccurencies = []
+    count = 0
+
+    for(var i=0; i<arr.length[i]; i++){
+      var theArr = arr[i]
+      if(theArr === target){
+        count = count + 1
+        allOccurencies.push(theArr)
+      }
+    }
+    return allOccurencies
 
   },
 };
